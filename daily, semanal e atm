@@ -1,0 +1,27 @@
+Daily:
+$nomention
+$botTyping
+$globalCooldown[24h;<@$authorID>, espere %time% para resgatar e aproveitar seu daily novamente.]
+$title[💸 / daily]
+$description[$username você resgatou **$numberSeparator[$random[1000;10000]]coins!**]
+$footer[Você sabia? para ver aua carteira basta usar F+atm.]
+$addTimestamp
+$setVar[money;$sum[$getVar[money;$authorID];$random[100;1000]];$authorID]
+
+semanal:
+$nomention
+$botTyping
+$globalCooldown[168h;<@$authorID>, espere %time% para resgatar e aproveitar seu semanal novamente.]
+$title[💸 / semanal]
+$description[$username você resgatou **$numberSeparator[$random[10000;100000]]coins!**]
+$footer[Você sabia? para ver aua carteira basta usar F+atm.]
+$addTimestamp
+$setVar[money;$sum[$getVar[money;$authorID];$random[1000;10000]];$authorID]
+
+  atm:
+$title[**Carteira ✉️ | O usuário $username[$mentioned[1;yes]] tem atualmente $getVar[money;$mentioned[1;yes]] coins.**]
+$description[✉️ | Carteira de $username[$mentioned[1;yes]]:]
+$reply
+$botTyping
+
+  Se tiver problema me manda na dm soi_floppa
